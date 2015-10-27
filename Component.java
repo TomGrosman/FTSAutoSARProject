@@ -1,13 +1,10 @@
-/**
- * @(#) Software Component.java
- * Fault Tolerant Systems AutoSAR project
- * 
- * Created by trg on Oct 21, 2015
- */
 
-public class SoftwareComponent
-{
-        private Task task;
-        
-        
+public class Component {
+
+	public String name;
+	
+	public Component(String _name) {
+		this.name = _name;
+	}
+
 }
