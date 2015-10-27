@@ -1,28 +1,19 @@
-/**
- * @(#) ECU.java
- * Fault Tolerant Systems AutoSAR project
- * 
- * Created by trg on Oct 21, 2015
- */
+import java.util.ArrayList;
+import java.util.List;
 
-public class ECU
-{
-        private ECUMemory ecumemory;
-        
-        private Runnable runnable;
-        
-        private Architecture architecture;
-        
-        private Scheduler scheduler;
-        
-        private Core core;
-        
-        private Bus bus;
-        
-        public ECU( )
-        {
-                
-        }
-        
-        
+
+public class ECU {
+
+	public int id;
+	public List<Component> components;
+	
+	public ECU(int _id) {
+		this.id = _id;
+		this.components = new ArrayList<Component>();
+	}
+
+	public void addComponent(Component _component) {
+		this.components.add(_component);
+	}
+	
 }
